@@ -1,4 +1,5 @@
 import logo from '../pages/img/logo.svg';
+import Sidebar from './burger-menu.component';
 
 const NavBar = () => {
    return (
@@ -25,14 +26,17 @@ const NavBar = () => {
       >
 
     
-      <button
+      {/* <button
         id="menu-btn"
         class="block hamburger md:hidden focus:outline-none"
       >
         <span class="hamburger-top"></span>
         <span class="hamburger-middle"></span>
         <span class="hamburger-bottom"></span>
-      </button>
+      </button> */}
+      <div className='block hamburger md:hidden focus:outline-none absolute right-0 top-0'>
+        <Sidebar />
+      </div>
     </div>
 
 

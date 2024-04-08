@@ -5,6 +5,7 @@ import Features from '../components/features.component';
 import Testimonials from '../components/testimonials.component';
 import Cta from '../components/cta.component';
 import Footer from '../components/footer.component';
+import Sidebar from '../components/burger-menu.component';
 
 class LandingPage extends React.Component {
   
@@ -12,7 +13,7 @@ class LandingPage extends React.Component {
         return (
           <div>
    
-
+    {/* <Sidebar/> */}
     <NavBar/>
    <Hero/>
    <Features/>

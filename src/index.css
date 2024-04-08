@@ -17,50 +17,85 @@ code {
     monospace;
 }
 
-/* Hamburger Menu */
-
-.hamburger {
-  cursor: pointer;
-  width: 24px;
-  height: 24px;
-  transition: all 0.25s;
+/* Position and sizing of burger button */
+.bm-burger-button {
+  /* position: fixed; */
   position: relative;
+  width: 36px;
+  height: 30px;
+  right: 36px;
+  top: 36px;
 }
 
-.hamburger-top,
-.hamburger-middle,
-.hamburger-bottom {
-  position: absolute;
-  top: 0;
-  left: 0;
+/* Color/shape of burger icon bars */
+.bm-burger-bars {
+  background: #373a47;
+}
+
+/* Color/shape of burger icon bars on hover*/
+.bm-burger-bars-hover {
+  background: #a90000;
+}
+
+/* Position and sizing of clickable cross button */
+.bm-cross-button {
+  height: 24px;
   width: 24px;
-  height: 2px;
-  background: #000;
-  transform: rotate(0);
-  transition: all 0.5s;
 }
 
-.hamburger-middle {
-  transform: translateY(7px);
+/* Color/shape of close button cross */
+.bm-cross {
+  background: #bdc3c7;
 }
 
-.hamburger-bottom {
-  transform: translateY(14px);
+/*
+Sidebar wrapper styles
+Note: Beware of modifying this element as it can break the animations - you should not need to touch it in most cases
+*/
+.bm-menu-wrap {
+  /* position: fixed; */
+  height: 100%;
 }
 
-.open {
-  transform: rotate(90deg);
-  transform: translateY(0px);
+/* General sidebar styles */
+.bm-menu {
+  background: #373a47;
+  padding: 2.5em 1.5em 0;
+  font-size: 1.15em;
 }
 
-.open .hamburger-top {
-  transform: rotate(45deg) translateY(6px) translate(6px);
+/* Morph shape necessary with bubble or elastic */
+.bm-morph-shape {
+  fill: #373a47;
 }
 
-.open .hamburger-middle {
-  display: none;
+/* Wrapper for item list */
+.bm-item-list {
+  color: #b8b7ad;
+  padding: 0.8em;
 }
 
-.open .hamburger-bottom {
-  transform: rotate(-45deg) translateY(6px) translate(-6px);
+/* Individual item */
+.bm-item {
+  display: inline-block;
+}
+
+/* Styling of overlay */
+.bm-overlay {
+  background: rgba(0, 0, 0, 0.3);
+}
+
+/* Individual item */
+.bm-item {
+  display: inline-block;
+
+  color: #d1d1d1;
+  margin-bottom: 10px;
+  text-align: left;
+  text-decoration: none;
+  transition: color 0.2s;
+}
+
+.bm-item:hover {
+  color: #ffffff;
 }
